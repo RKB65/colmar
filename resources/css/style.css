@@ -1,0 +1,326 @@
+html {
+  font-family: ;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  padding: 8px 0;
+  margin: 0 0;
+}
+
+#logo {
+  font-size: 1.25rem;
+}
+
+.headlogo {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.headlogo img {
+  height: 32px;
+}
+
+.links nav {
+  margin-right: 24px;
+}
+
+.mobile-links {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 8px;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+}
+
+.banner {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.left-box img {
+  margin: 32px 24px;
+  max-width: 100%;
+}
+
+.right-box {
+  width: 40%;
+}
+
+.button {
+  display: block;
+  max-width: 80%;
+  padding: 8px 0;
+  margin-top: 24px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.moto-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.moto {
+  display: block;
+  padding: 24px 0;
+  max-width: 80%;
+}
+
+.quote {
+  display: block;
+  margin-left: 24px;
+}
+
+.quote span {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 2rem;
+}
+
+.info {
+  margin: 0 0;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.feature-img {
+  max-width: 35%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.feature-img img {
+  max-width: 100%;
+  padding: 16px 16px;
+}
+
+.feature {
+  display: flex;
+}
+
+.even {
+  background-color: lightgrey;
+}
+
+.odd {
+  background-color: white;
+}
+
+.feature-info {
+  display: flex;
+  margin-left: 16px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-info span {
+  padding: 4px 12px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.mobile-courses {
+  display: none;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.course-box {
+  display: flex;
+  padding: 0 56px;
+
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 0 16px 32px 16px;
+  background-color: white;
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 24px 16px;
+}
+
+video {
+  background-color: #5c5c8a;
+  margin: 0 24px 24px 24px;
+  max-width: 100%;
+}
+
+.thesis-display{
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+
+.copyright {
+  padding: 16px 24px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding-right: 16px;
+}
+
+.legal {
+  padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .headlogo, .links, .info-quote, .course-box, .quote, .news, .legal, .desktop-img {
+    display: none;
+  }
+
+  .mobile-links {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .mobile-nav a img {
+    height: 32px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100%;
+  }
+
+  .right-box {
+    width: 100%;
+  }
+
+  .moto {
+    padding: 32px 0 0 16px;
+    max-width: 100%;
+  }
+
+  .button {
+    padding: 24px 0;
+/*    margin-right: 32px;*/
+    margin: 24px 16px 32px 16px;
+    max-width: 100%;
+  }
+
+  .left-box img {
+    margin: 0 0;
+  }
+
+  .feature {
+    flex-direction: column;
+/*    width: 100%;*/
+  }
+
+  .mobile-img {
+    display: flex;
+  }
+
+  .feature-img {
+    max-width: 100%;
+  }
+
+  .feature-info {
+    padding-bottom: 64px;
+  }
+
+  .courses {
+    background-color: white;
+    border: .5px solid lightgrey;
+  }
+
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0 28px 0;
+  }
+
+  .m-course-box {
+    display: block;
+    margin: 4px 16px;
+    background-color: lightgrey;
+  }
+
+  .m-course-box h2 {
+    padding: 16px 0 24px 16px;
+  }
+
+  .title {
+    padding: 32px 0 16px 0;
+  }
+
+}
