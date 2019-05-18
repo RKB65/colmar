@@ -10,64 +10,71 @@
   <body>
     <header>
       <div class="headlogo">
-        <img src="./resources/images/ic-logo.svg">
+        <img src="./resources/images/ic-logo.svg" alt="logo">
         <span id="logo"><strong>Colmar</strong>Academy</span>
       </div>
+<!-- Main Navigation -->
       <div class="links">
-        <nav class="pc-nav">
-          <a href="#mission">On Campus</a>
+        <nav class="pc-nav" role="presentation">
+          <a href="#campus">On Campus</a>
           <a href="#feature">Online</a>
-          <a href="#locations">Companies</a>
-          <a href="#login">Sign in</a>
+          <a href="#business">For Business</a>
+          <a href="#login">Sign in</a> <!-- Likely another page -->
         </nav>
       </div>
+<!-- Navigation for mobile /smaller screens -->
       <div class="mobile-links">
-        <nav class="mobile-nav">
-          <a href="#home"><img src="./resources/images/ic-logo.svg"></a>
-          <a href="#mission"><img src="./resources/images/ic-on-campus.svg"></a>
-          <a href="#feature"><img src="./resources/images/ic-online.svg"></a>
-          <a href="#login"><img src="./resources/images/ic-login.svg"></a>
+        <nav class="mobile-nav" role="presentation">
+          <a href="#home"><img src="./resources/images/ic-logo.svg" alt="home"></a>
+          <a href="#campus"><img src="./resources/images/ic-on-campus.svg" alt="mission"></a>
+          <a href="#feature"><img src="./resources/images/ic-online.svg" alt="feature"></a>
+          <a href="#login"><img src="./resources/images/ic-login.svg" alt="login"></a>
         </nav>
       </div>
     </header>
     <main>
-<!-- Mission section -->
+
       <div class="banner box">
         <div class="banner-image left-box">
-          <img src="./resources/images/banner.jpg">
+          <img src="./resources/images/banner.jpg" alt="students at table">
         </div>
         <div class="moto-box right-box">
           <span class="moto"><h1>Learn something new everyday</h1></span>
-          <span class="moto"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></span>
-          <span class="button"><h3>Start here</h3></span>
+          <span class="moto"><h2>Here's the story of a lovely lady, who was bringing up three very lovely girls.
+            All of them had hair of gold, like their mother, the youngest one in curls.</h2></span>
+<!-- I assume this button would link to a login screen (or something of that nature) -->
+          <span class="button"><a href="#login"><h3>Start here</h3></a></span>
         </div>
       </div>
 
-      <div class="information box">
+      <!-- On campus section -->
+
+      <div class="information box" id="campus">
         <div class="left-box info-quote">
-            <img src="./resources/images/information-main.jpg">
+            <img src="./resources/images/information-main.jpg" alt="man reading">
           <div class="quote">
             <span><h1>It doesn't hurt to keep practicing</h1></span>
-            <span>a bunch of random text</span>
+            <span>It's the story of a man named Brady who was busy with 3 boys of his own.
+              They were four men living all together yet they were all alone.</span>
             <span id="author">Emanuel, Sr Strategist at Hiring.com</span>
           </div>
         </div>
         <div class="sub-box info right-box">
           <div class="feature odd">
             <div class="feature-img">
-              <img class="desktop-img" src="./resources/images/information-orientation.jpg">
-              <img class="mobile-img" src="./resources/images/information-orientation-mobile.jpg">
+              <img class="desktop-img" src="./resources/images/information-orientation.jpg" alt="students walking">
+              <img class="mobile-img" src="./resources/images/information-orientation-mobile.jpg" alt="students walking">
             </div>
             <div class="feature-info">
               <span><h2>Orientation Date</h2></span>
               <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
-              <span><a href="#more">Read more</a></span>
+              <span><a href="#more">Read more</a></span> <!-- All "Read more" links would connect to other pages -->
             </div>
           </div>
           <div class="feature even">
             <div class="feature-img">
-              <img class="desktop-img" src="./resources/images/information-campus.jpg">
-              <img class="mobile-img" src="./resources/images/information-campus-mobile.jpg">
+              <img class="desktop-img" src="./resources/images/information-campus.jpg" alt="people studying">
+              <img class="mobile-img" src="./resources/images/information-campus-mobile.jpg" alt="people studying">
             </div>
             <div class="feature-info">
               <span><h2>Our campus</h2></span>
@@ -77,8 +84,8 @@
           </div>
           <div class="feature odd">
             <div class="feature-img">
-              <img class="desktop-img" src="./resources/images/information-guest-lecture.jpg">
-              <img class="mobile-img" src="./resources/images/information-guest-lecture-mobile.jpg">
+              <img class="desktop-img" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+              <img class="mobile-img" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
             </div>
             <div class="feature-info">
               <span><h2>Our guest lecture</h2></span>
@@ -89,13 +96,15 @@
         </div>
       </div>
 
-      <div class="courses box">
+<!-- Online / feature section for large screens-->
+
+      <div class="courses box" id="feature">
         <div class="title">
           <h1>Start Learning</h1>
         </div>
         <div class="course-box">
           <div class="course">
-            <img src="./resources/images/course-software.jpg">
+            <img src="./resources/images/course-software.jpg" alt="computer">
             <div class="course-info">
               <h2>Software Engineering</h2>
               <h4>Courses</h4>
@@ -103,49 +112,52 @@
             </div>
           </div>
           <div class="course">
-            <img src="./resources/images/course-computer-art.jpg">
+            <img src="./resources/images/course-computer-art.jpg" alt="phone">
             <div class="course-info">
               <h2>Computer Art</h2>
               <h4>Courses</h4>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+              <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
             </div>
           </div>
           <div class="course">
-            <img src="./resources/images/course-design.jpg">
+            <img src="./resources/images/course-design.jpg" alt="photographer">
             <div class="course-info">
               <h2>Design</h2>
               <h4>Courses</h4>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+              <span>User Experience Design, User Research, Visual Design</span>
             </div>
           </div>
         </div>
         <div class="course-box">
           <div class="course">
-            <img src="./resources/images/course-data.jpg">
+            <img src="./resources/images/course-data.jpg" alt="laptop">
             <div class="course-info">
               <h2>Data</h2>
               <h4>Courses</h4>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+              <span>Data Science, Big Data, SQL, Data Visualization</span>
             </div>
           </div>
           <div class="course">
-            <img src="./resources/images/course-business.jpg">
+            <img src="./resources/images/course-business.jpg" alt="chess board">
             <div class="course-info">
               <h2>Business</h2>
               <h4>Courses</h4>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+              <span>Product Development, Business Development, Startup</span>
             </div>
           </div>
           <div class="course">
-            <img src="./resources/images/course-marketing.jpg">
+            <img src="./resources/images/course-marketing.jpg" alt="smart watch">
             <div class="course-info">
               <h2>Marketing</h2>
               <h4>Courses</h4>
-              <span>Web Development, Mobile Development, iOT, APIs</span>
+              <span>Analytics, Content Marketing, Mobile Marketing</span>
             </div>
           </div>
         </div>
-        <div class="mobile-courses">
+
+<!-- Mobile version of feature section -->
+
+        <div class="mobile-courses" id="feature">
           <div class="m-course-box">
             <h2>Software Engineering</h2>
           </div>
@@ -166,7 +178,10 @@
           </div>
         </div>
       </div>
-      <div class="thesis-section">
+
+<!-- For Business section -->
+
+      <div class="thesis-section" id="business">
         <div class="title">
           <h1>Thesis Exhibit</h1>
         </div>
@@ -178,13 +193,14 @@
             </video>
             <div class="quote">
               <h2>Reimagine Urban</h2>
-              <span>lots of random words</span>
+              <span>Till the one day when the lady met this fellow and they knew that is was much more than a hunch.
+                That's this group must somehow form a family. That's the way we all became the Brady Bunch</span>
             </div>
           </div>
           <div class="right-box news">
             <div class="feature even">
               <div class="feature-img">
-                <img src="./resources/images/thesis-fisma.jpg">
+                <img src="./resources/images/thesis-fisma.jpg" alt="person working">
               </div>
               <div class="feature-info">
                 <span><h2>Fisma: Design and Prototype</h2></span>
@@ -193,7 +209,7 @@
             </div>
             <div class="feature odd">
               <div class="feature-img">
-                <img src="./resources/images/thesis-now-and-then.jpg">
+                <img src="./resources/images/thesis-now-and-then.jpg" alt="city skyline">
               </div>
               <div class="feature-info">
                 <span><h2>Now and Then</h2></span>

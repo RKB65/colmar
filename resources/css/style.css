@@ -1,12 +1,12 @@
 html {
-  font-family: ;
+  font-family: verdana, helvetica;
   font-size: 16px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 4rem;
   align-items: center;
 }
 
@@ -27,7 +27,7 @@ h3 {
 }
 
 h4 {
-  padding: 8px 0;
+  padding: .5rem 0;
   margin: 0 0;
 }
 
@@ -38,26 +38,33 @@ h4 {
 .headlogo {
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .headlogo img {
-  height: 32px;
+  height: 2rem;
 }
 
 .links nav {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .mobile-links {
   display: none;
 }
 
-nav a {
+a {
   text-decoration: none;
-  padding: 0 8px;
+  padding: 0 .5rem;
   color: black;
   font-size: 1.25rem;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+}
+
+a:hover {
+  background-color: #7161E8;
+  color: white;
 }
 
 .box {
@@ -66,7 +73,7 @@ nav a {
 }
 
 .banner {
-  background-color: lightgrey;
+  background-color: #778CFF;
   width: 100%;
 }
 
@@ -77,7 +84,7 @@ nav a {
 }
 
 .left-box img {
-  margin: 32px 24px;
+  margin: 2rem 1.5rem;
   max-width: 100%;
 }
 
@@ -88,11 +95,15 @@ nav a {
 .button {
   display: block;
   max-width: 80%;
-  padding: 8px 0;
-  margin-top: 24px;
+  padding: .5rem 0;
+  margin-top: 1.5rem;
   text-align: center;
-  background-color: grey;
+  background-color: #7161E8;
+}
+
+.button h3 {
   color: white;
+  font-weight: bold;
 }
 
 .moto-box {
@@ -103,24 +114,24 @@ nav a {
 
 .moto {
   display: block;
-  padding: 24px 0;
+  padding: 1.5rem 0;
   max-width: 80%;
 }
 
 .quote {
   display: block;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .quote span {
   display: flex;
-  padding-top: 8px;
+  padding-top: .5rem;
   padding-bottom: 2rem;
 }
 
 .info {
   margin: 0 0;
-  padding-top: 16px;
+  padding-top: 1rem;
   align-items: center;
 }
 
@@ -134,7 +145,7 @@ nav a {
 
 .feature-img img {
   max-width: 100%;
-  padding: 16px 16px;
+  padding: 1rem 1rem;
 }
 
 .feature {
@@ -142,7 +153,7 @@ nav a {
 }
 
 .even {
-  background-color: lightgrey;
+  background-color: #778CFF;
 }
 
 .odd {
@@ -151,13 +162,13 @@ nav a {
 
 .feature-info {
   display: flex;
-  margin-left: 16px;
+  margin-left: 1rem;
   flex-direction: column;
   justify-content: center;
 }
 
 .feature-info span {
-  padding: 4px 12px;
+  padding: .25rem .75rem;
 }
 
 .title {
@@ -174,20 +185,19 @@ nav a {
 .courses {
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #778CFF;
 }
 
 .course-box {
   display: flex;
-  padding: 0 56px;
-
+  padding: 0 3.5rem;
 }
 
 .course {
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  margin: 0 16px 32px 16px;
+  margin: 0 1rem 2rem 1rem;
   background-color: white;
 }
 
@@ -199,12 +209,12 @@ nav a {
 .course-info {
   display: flex;
   flex-direction: column;
-  padding: 16px 16px 24px 16px;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 video {
   background-color: #5c5c8a;
-  margin: 0 24px 24px 24px;
+  margin: 0 1.5rem 1.5rem 1.5rem;
   max-width: 100%;
 }
 
@@ -215,24 +225,24 @@ video {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: lightgrey;
+  background-color: #778CFF;
 }
 
 .copyright {
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
 }
 
 footer a {
   text-decoration: none;
   color: black;
-  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 .legal {
-  padding: 8px;
+  padding: .5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 470px) {
 
   .headlogo, .links, .info-quote, .course-box, .quote, .news, .legal, .desktop-img {
     display: none;
@@ -250,7 +260,7 @@ footer a {
   }
 
   .mobile-nav a img {
-    height: 32px;
+    height: 2rem;
   }
 
   .box {
@@ -266,14 +276,14 @@ footer a {
   }
 
   .moto {
-    padding: 32px 0 0 16px;
+    padding: 2rem 0 0 1rem;
     max-width: 100%;
   }
 
   .button {
-    padding: 24px 0;
+    padding: 1.5rem 0;
 /*    margin-right: 32px;*/
-    margin: 24px 16px 32px 16px;
+    margin: 1.5rem 1rem 2rem 1rem;
     max-width: 100%;
   }
 
@@ -295,32 +305,32 @@ footer a {
   }
 
   .feature-info {
-    padding-bottom: 64px;
+    padding-bottom: 4rem;
   }
 
   .courses {
     background-color: white;
-    border: .5px solid lightgrey;
+    border: .5px solid #6199E8;
   }
 
   .mobile-courses {
     display: flex;
     flex-direction: column;
-    padding: 12px 0 28px 0;
+    padding: .75rem 0 1.75rem 0;
   }
 
   .m-course-box {
     display: block;
-    margin: 4px 16px;
-    background-color: lightgrey;
+    margin: .25rem 1rem;
+    background-color: #778CFF;
   }
 
   .m-course-box h2 {
-    padding: 16px 0 24px 16px;
+    padding: 1rem 0 1.5rem 1rem;
   }
 
   .title {
-    padding: 32px 0 16px 0;
+    padding: 2rem 0 1rem 0;
   }
 
 }
